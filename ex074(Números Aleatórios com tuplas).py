@@ -6,5 +6,5 @@ print("Os Números sorteados são: ", end='' )
 for numero in numeros:
     print(numero, end=' ')
 
-print(f"\nO maior valor sorteado foi {sorted(numeros)[4]}")
-print(f"O menor valor sorteado foi {sorted(numeros)[0]}")
+print(f"\nO maior valor sorteado foi {max(numeros)}")
+print(f"O menor valor sorteado foi {min(numeros)}")
