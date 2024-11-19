@@ -9,6 +9,9 @@ for i in range(1, 8):
     else:
         numeros[1].append(num)
 
+numeros[0] = list(set(numeros[0]))
+numeros[1] = list(set(numeros[1]))
+
 numeros[0].sort()
 numeros[1].sort()
 
