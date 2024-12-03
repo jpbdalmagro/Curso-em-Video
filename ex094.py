@@ -37,10 +37,14 @@ print(f"- A média de idade do grupo é {media:.2f} anos.")
 if mulheres:
     print(f"- As mulheres do grupo são ", end='')
     for m in mulheres:
-        print(m, end=' ')
-    print(".")
+        if m in mulheres[:-2]:
+            print(m, end=', ')
+        elif m == mulheres[-2]:
+            print(m, end=' e ')
+        else:
+            print(m + ".")
 
-print(f"- Pessoas acima com a idade acima da média:")
+print(f"- Pessoas com a idade acima da média:")
 
 for pessoa in acima_media:
     for k, v in pessoa.items():
